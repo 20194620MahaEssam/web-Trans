@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database1.mdf" />
+    <Content Include="IMAGES\SKY.jpg" />
     <Content Include="Regstation.aspx" />
+    <Content Include="SIGNUP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +82,13 @@
     <Compile Include="Regstation.aspx.designer.cs">
       <DependentUpon>Regstation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SIGNUP.aspx.cs">
+      <DependentUpon>SIGNUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIGNUP.aspx.designer.cs">
+      <DependentUpon>SIGNUP.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -89,6 +99,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
