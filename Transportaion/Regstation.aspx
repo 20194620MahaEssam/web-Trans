@@ -10,10 +10,10 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 142px;
+            width: 544px;
         }
         .auto-style4 {
-            width: 273px;
+            width: 512px;
         }
         .auto-style5 {
             width: 242px;
@@ -31,7 +31,7 @@
             text-align: center;
         }
         .auto-style9 {
-            width: 142px;
+            width: 544px;
             text-align: center;
         }
         .auto-style10 {
@@ -51,7 +51,7 @@
             height: 38px;
         }
         .auto-style14 {
-            width: 142px;
+            width: 544px;
             text-align: center;
             height: 38px;
         }
@@ -61,6 +61,16 @@
             background-attachment:fixed;
         }
         
+        .auto-style15 {
+            text-align: center;
+            height: 38px;
+            width: 512px;
+        }
+        .auto-style16 {
+            text-align: center;
+            width: 512px;
+        }
+        
     </style>
 </head>
 <body>
@@ -68,7 +78,7 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style5"></td>
-                <td class="auto-style7" colspan="2" style="font-family: 'Times New Roman', Times, serif; font-size: 40px; color: #3333FF">Create your Account</td>
+                <td class="auto-style7" colspan="2" style="font-family: 'Times New Roman', Times, serif; font-size: 40px; color: #3333FF">Create Your Account</td>
                 <td class="auto-style6"></td>
             </tr>
             <tr>
@@ -78,8 +88,8 @@
             </tr>
             <tr>
                 <td class="auto-style12"></td>
-                <td class="auto-style13">First Name</td>
-                <td class="auto-style14"><asp:TextBox ID="TextBox1" runat="server" style="margin-left: 0px" Width="190px" ></asp:TextBox>
+                <td class="auto-style15">First Name</td>
+                <td class="auto-style14"><asp:TextBox ID="TextBox1" runat="server" style="margin-left: 0px" Width="188px" Height="21px" ></asp:TextBox>
                 </td>
                 <td class="auto-style13"></td>
             </tr>
@@ -91,37 +101,37 @@
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Last Name</td>
+                <td class="auto-style16">Last Name</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" Width="186px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" Width="188px" Height="21px"></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">User Name</td>
+                <td class="auto-style16">User Name</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox3" runat="server" Width="181px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Width="188px" Height="21px"></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Gender</td>
+                <td class="auto-style16">Gender</td>
                 <td class="auto-style9">
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" Width="173px">
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" Width="421px">
                         <asp:ListItem>Male</asp:ListItem>
                         <asp:ListItem>Female</asp:ListItem>
                     </asp:CheckBoxList>
@@ -130,15 +140,15 @@
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">City</td>
+                <td class="auto-style16">City</td>
                 <td class="auto-style9">
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="188px">
                         <asp:ListItem>Cairo</asp:ListItem>
                         <asp:ListItem>Alexandria</asp:ListItem>
                         <asp:ListItem>Aswan</asp:ListItem>
@@ -149,81 +159,81 @@
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Email</td>
+                <td class="auto-style16">Email</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox4" runat="server" Width="174px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox8" runat="server" style="margin-left: 0px" Width="188px" Height="21px" ></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Phone Number</td>
+                <td class="auto-style16">Phone Number</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox5" runat="server" Width="171px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox9" runat="server" style="margin-left: 0px" Width="188px" Height="21px" ></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Password </td>
+                <td class="auto-style16">Password </td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox6" runat="server" Width="181px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox10" runat="server" style="margin-left: 0px" Width="188px" Height="21px" ></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">Confirm Password</td>
+                <td class="auto-style16">Confirm Password</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBox7" runat="server" Width="176px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox11" runat="server" style="margin-left: 0px" Width="188px" Height="21px" ></asp:TextBox>
                 </td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>
