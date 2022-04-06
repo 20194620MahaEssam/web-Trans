@@ -72,6 +72,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="HOME.html" />
+    <Content Include="IMAGES\cloud.png" />
     <Content Include="IMAGES\SKY.jpg" />
     <Content Include="Regstation.aspx" />
     <Content Include="SIGNUP.aspx" />
