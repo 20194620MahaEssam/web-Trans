@@ -73,8 +73,8 @@
                 <td class="auto-style19"></td>
             </tr>
             <tr>
-                <td class="auto-style25" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">First Name</td>
-                <td class="auto-style25"><asp:TextBox ID="Fname" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
+                <td class="auto-style25" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">User Name</td>
+                <td class="auto-style25"><asp:TextBox ID="Uname" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
                 </td>
                 <td class="auto-style25">&nbsp;</td>
                 <td class="auto-style25"></td>
@@ -86,63 +86,20 @@
                 <td class="auto-style26">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Last Name</td>
-                <td class="auto-style26">
-                    <asp:TextBox ID="Lname" runat="server" OnTextChanged="TextBox2_TextChanged" Width="188px" Height="21px" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
-                </td>
+                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">&nbsp;</td>
                 <td class="auto-style26">
                     &nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">User Name</td>
+                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Phone Number</td>
                 <td class="auto-style26">
-                    <asp:TextBox ID="UserName" runat="server" Width="188px" Height="21px" BorderWidth="1px"></asp:TextBox>
+                    <asp:TextBox ID="PNum" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
                 </td>
-                <td class="auto-style26">
-                    &nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Gender</td>
-                <td class="auto-style26">
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" Width="265px" Height="18px" RepeatDirection="Horizontal">
-                        <asp:ListItem Value="M">Male</asp:ListItem>
-                        <asp:ListItem Value="F">Female</asp:ListItem>
-                    </asp:CheckBoxList>
-                </td>
-                <td class="auto-style26">
-                    &nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">City</td>
-                <td class="auto-style26">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="188px">
-                        <asp:ListItem>Cairo</asp:ListItem>
-                        <asp:ListItem>Alexandria</asp:ListItem>
-                        <asp:ListItem>Aswan</asp:ListItem>
-                        <asp:ListItem>Dahab</asp:ListItem>
-                    </asp:DropDownList>
-                </td>
                 <td class="auto-style26">
                     &nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
@@ -158,51 +115,77 @@
                 <td class="auto-style25">
                     <asp:TextBox ID="Email" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style25">
-                </td>
+                    </td>
                 <td class="auto-style25"></td>
-            </tr>
-            <tr>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Phone Number</td>
-                <td class="auto-style26">
-                    <asp:TextBox ID="PNum" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
-                </td>
-                <td class="auto-style26">
-                    &nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Password </td>
                 <td class="auto-style26">
                     <asp:TextBox ID="Pass" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
                 </td>
-                <td class="auto-style26">
-                    &nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style25">
+                </td>
+                <td class="auto-style25"></td>
             </tr>
             <tr>
                 <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Confirm Password</td>
                 <td class="auto-style26">
                     <asp:TextBox ID="CPass" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
                 </td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">&nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">&nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style25">
+                    <asp:Button ID="Button1" runat="server" Font-Bold="True" ForeColor="#00CCFF" OnClick="Button1_Click" Text="Save" Width="190px" Height="30px" BackColor="White" BorderColor="Black" BorderStyle="Solid" class="block magenta margin-auto" PostBackUrl="~/HOME.aspx" />
+                </td>
+                <td class="auto-style25">
+                    <asp:Button ID="Button2" runat="server" Text="Cancel" Width="190px" Height="30px" BackColor="White" BorderColor="Black" BorderStyle="Solid" />
+                </td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style26" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">&nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
                 <td class="auto-style26">
                     &nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
@@ -227,11 +210,9 @@
             </tr>
             <tr>
                 <td class="auto-style25">
-                    <asp:Button ID="Button1" runat="server" Font-Bold="True" ForeColor="#00CCFF" OnClick="Button1_Click" Text="Save" Width="190px" Height="30px" BackColor="White" BorderColor="Black" BorderStyle="Solid" class="block magenta margin-auto" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style25">
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" Width="190px" Height="30px" BackColor="White" BorderColor="Black" BorderStyle="Solid" />
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style25"></td>
                 <td class="auto-style25"></td>
             </tr>
