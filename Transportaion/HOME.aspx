@@ -72,6 +72,16 @@
             text-align: left;
             width: 105px;
         }
+        .auto-style58 {
+            text-align: left;
+            width: 105px;
+            height: 113px;
+        }
+        .auto-style59 {
+            text-align: left;
+            width: 376px;
+            height: 113px;
+        }
         </style>
 </head>
 <body>
@@ -118,16 +128,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style57" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                        <td class="auto-style58" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
                             <asp:Label ID="Label4" runat="server" Text="From"></asp:Label>
                             <br />
-                            <asp:DropDownList ID="DropDownList2" runat="server">
+                            <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                                <asp:ListItem Selected="True">Cairo</asp:ListItem>
+                                <asp:ListItem>Alexandria</asp:ListItem>
+                                <asp:ListItem>Dahab</asp:ListItem>
                             </asp:DropDownList>
                             <br />
                             <br />
                         </td>
-                        <td class="auto-style48" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">To<br />
-                            <asp:DropDownList ID="DropDownList3" runat="server">
+                        <td class="auto-style59" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">To<br />
+                            <asp:DropDownList ID="DropDownList3" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
+                                <asp:ListItem Selected="True">Alexandria</asp:ListItem>
+                                <asp:ListItem>Cairo</asp:ListItem>
+                                <asp:ListItem>Dahab</asp:ListItem>
                             </asp:DropDownList>
                             `</td>
                     </tr>
