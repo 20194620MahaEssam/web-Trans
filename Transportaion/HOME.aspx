@@ -112,12 +112,7 @@
                             <br />
                         </td>
                         <td class="auto-style27" rowspan="3">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="172px">
-                                <asp:ListItem Selected="True">My Account</asp:ListItem>
-                                <asp:ListItem>My Booking</asp:ListItem>
-                                <asp:ListItem>Sign Out</asp:ListItem>
-                            </asp:DropDownList>
-                        </td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style54" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">

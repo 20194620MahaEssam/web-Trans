@@ -16,6 +16,10 @@
             height: 38px;
             width: 275px;
         }
+        .auto-style5 {
+            width: 275px;
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -23,17 +27,17 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style5">
                             <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Names="Tahoma" Font-Size="Medium" NavigateUrl="~/HOME.aspx" Target="_self">Home</asp:HyperLink>
                         </td>
-                    <td class="auto-style3">
+                    <td class="auto-style5">
                             <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Names="Tahoma" NavigateUrl="~/DESTINATION.aspx" Target="_blank">Travel Destination</asp:HyperLink>
                         </td>
-                    <td class="auto-style3">
+                    <td class="auto-style5">
                             <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Tahoma" NavigateUrl="~/STATIONS.aspx" Target="_blank">Stations</asp:HyperLink>
                         </td>
-                    <td class="auto-style3">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="228px">
+                    <td class="auto-style5">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="228px" AutoPostBack="True">
                                 <asp:ListItem Selected="True">My Account</asp:ListItem>
                                 <asp:ListItem>My Booking</asp:ListItem>
                                 <asp:ListItem>Sign Out</asp:ListItem>
