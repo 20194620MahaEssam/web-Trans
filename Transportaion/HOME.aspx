@@ -11,7 +11,7 @@
             height: 600px;
         }
         .auto-style7 {
-            width: 9%;
+            width: 31%;
             height: 38px;
             text-align: center;
         }
@@ -29,7 +29,7 @@
             width: 20%;
         }
         .auto-style13 {
-            width: 9%;
+            width: 31%;
             height: 270px;
         }
         .auto-style21 {
@@ -48,12 +48,13 @@
         }
         .auto-style48 {
             text-align: left;
+            width: 376px;
         }
         .auto-style49 {
             height: 21px;
         }
         .auto-style51 {
-            width: 9%;
+            width: 31%;
             height: 338px;
         }
         .auto-style54 {
@@ -69,18 +70,9 @@
         }
         .auto-style57 {
             text-align: left;
-            width: 128px;
+            width: 105px;
         }
-        .auto-style58 {
-            text-align: left;
-            width: 128px;
-            height: 66px;
-        }
-        .auto-style59 {
-            text-align: left;
-            height: 66px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -98,7 +90,19 @@
                             <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Tahoma" NavigateUrl="~/STATIONS.aspx" Target="_blank">Stations</asp:HyperLink>
                         </td>
                         <td class="auto-style10">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="228px">
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/SIGNIN.aspx" Target="_blank">Sign In</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style13" rowspan="3"></td>
+                        <td class="auto-style49" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;"><strong>
+                            <br />
+                            </strong>
+                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Large" Text="Book Your Trip"></asp:Label>
+                            <br />
+                        </td>
+                        <td class="auto-style27" rowspan="3">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="172px">
                                 <asp:ListItem Selected="True">My Account</asp:ListItem>
                                 <asp:ListItem>My Booking</asp:ListItem>
                                 <asp:ListItem>Sign Out</asp:ListItem>
@@ -106,17 +110,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style13" rowspan="3"></td>
-                        <td class="auto-style49" colspan="3"><strong>
-                            <br />
-                            </strong>
-                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Large" Text="Book Your Trip"></asp:Label>
-                            <br />
-                        </td>
-                        <td class="auto-style27" rowspan="3"></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style54" colspan="3">
+                        <td class="auto-style54" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
                             <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" Width="660px">
                                 <asp:ListItem>One Way</asp:ListItem>
                                 <asp:ListItem>Round Trip</asp:ListItem>
@@ -124,7 +118,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style58" colspan="2">
+                        <td class="auto-style57" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
                             <asp:Label ID="Label4" runat="server" Text="From"></asp:Label>
                             <br />
                             <asp:DropDownList ID="DropDownList2" runat="server">
@@ -132,14 +126,14 @@
                             <br />
                             <br />
                         </td>
-                        <td class="auto-style59">To<br />
+                        <td class="auto-style48" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">To<br />
                             <asp:DropDownList ID="DropDownList3" runat="server">
                             </asp:DropDownList>
                             `</td>
                     </tr>
                     <tr>
                         <td class="auto-style51" rowspan="3"></td>
-                        <td class="auto-style57" colspan="2">
+                        <td class="auto-style57" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
                             <asp:Label ID="Label3" runat="server" Text="Depature Date"></asp:Label>
                             <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="16px" NextPrevFormat="FullMonth" Width="130px">
                                 <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -150,7 +144,7 @@
                                 <TodayDayStyle BackColor="#CCCCCC" />
                             </asp:Calendar>
                         </td>
-                        <td class="auto-style48">
+                        <td class="auto-style48" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
                             <asp:Label ID="Label2" runat="server" Text="Return Date"></asp:Label>
                             <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="153px" NextPrevFormat="FullMonth" Width="130px">
                                 <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -164,11 +158,14 @@
                         <td class="auto-style45" rowspan="3"></td>
                     </tr>
                     <tr>
-                        <td class="auto-style56" colspan="3">Passengers </td>
+                        <td class="auto-style56" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">Passengers 
+                            <br />
+                            <asp:TextBox ID="TextBox1" runat="server" Width="333px"></asp:TextBox>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="auto-style55" colspan="3">
-                            <asp:Button ID="Button1" runat="server" Text="Show Trips" Width="421px" />
+                        <td class="auto-style55" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                            <asp:Button ID="Button1" runat="server" Text="Show Trips" Width="421px" PostBackUrl="~/TRIPS.aspx" />
                         </td>
                     </tr>
                     <tr>

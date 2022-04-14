@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Destination</title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -54,21 +54,21 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:ImageButton ID="ImageButton1" runat="server" Height="100px" ImageUrl="~/IMAGES/alexandria.jpg" PostBackUrl="~/BOOKING.aspx" Width="250px" />
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="100px" ImageUrl="~/IMAGES/alexandria.jpg" PostBackUrl="~/TRIPS.aspx" Width="250px" />
                         <br />
                         Alexandria</td>
                     <td class="auto-style4">
-                        <asp:ImageButton ID="ImageButton2" runat="server" Height="100px" ImageUrl="~/IMAGES/Dahab.jpg" PostBackUrl="~/BOOKING.aspx" Width="250px" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" Height="100px" ImageUrl="~/IMAGES/Dahab.jpg" PostBackUrl="~/TRIPS.aspx" Width="250px" />
                         <br />
                         <asp:Label ID="Label1" runat="server" Text="Dahab"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:ImageButton ID="ImageButton3" runat="server" Height="100px" ImageUrl="~/IMAGES/Hurghada.jpg" PostBackUrl="~/BOOKING.aspx" Width="250px" />
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="100px" ImageUrl="~/IMAGES/Hurghada.jpg" PostBackUrl="~/TRIPS.aspx" Width="250px" />
                         <br />
                         <asp:Label ID="Label2" runat="server" Text="Hurghada"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:ImageButton ID="ImageButton4" runat="server" Height="100px" ImageUrl="~/IMAGES/Port-Said.jpg" PostBackUrl="~/BOOKING.aspx" Width="250px" />
+                        <asp:ImageButton ID="ImageButton4" runat="server" Height="100px" ImageUrl="~/IMAGES/Port-Said.jpg" PostBackUrl="~/TRIPS.aspx" Width="250px" />
                         <br />
                         <asp:Label ID="Label3" runat="server" Text="Port Said"></asp:Label>
                     </td>

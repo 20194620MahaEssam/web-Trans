@@ -71,8 +71,8 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="BOOKING.aspx" />
     <Content Include="DESTINATION.aspx" />
+    <Content Include="ACCOUNT.aspx" />
     <Content Include="HOME.aspx" />
     <Content Include="IMAGES\alexandria.jpg" />
     <Content Include="IMAGES\cloud.png" />
@@ -82,23 +82,24 @@
     <Content Include="IMAGES\SKY.jpg" />
     <Content Include="Regstation.aspx" />
     <Content Include="SIGNIN.aspx" />
+    <Content Include="TRIPS.aspx" />
     <Content Include="Web.config" />
     <Content Include="STATIONS.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BOOKING.aspx.cs">
-      <DependentUpon>BOOKING.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BOOKING.aspx.designer.cs">
-      <DependentUpon>BOOKING.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DESTINATION.aspx.cs">
       <DependentUpon>DESTINATION.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DESTINATION.aspx.designer.cs">
       <DependentUpon>DESTINATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNT.aspx.cs">
+      <DependentUpon>ACCOUNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACCOUNT.aspx.designer.cs">
+      <DependentUpon>ACCOUNT.aspx</DependentUpon>
     </Compile>
     <Compile Include="HOME.aspx.cs">
       <DependentUpon>HOME.aspx</DependentUpon>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="STATIONS.aspx.designer.cs">
       <DependentUpon>STATIONS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TRIPS.aspx.cs">
+      <DependentUpon>TRIPS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TRIPS.aspx.designer.cs">
+      <DependentUpon>TRIPS.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

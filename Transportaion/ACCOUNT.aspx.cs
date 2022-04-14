@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace Transportaion
 {
-    public partial class HOME : System.Web.UI.Page
+    public partial class EDIT : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void HiddenField1_ValueChanged(object sender, EventArgs e)
         {
 
         }
