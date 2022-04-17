@@ -155,11 +155,10 @@
                                 <TodayDayStyle BackColor="#CCCCCC" />
                             </asp:Calendar>
                         </td>
-                        <td class="auto-style45" rowspan="3"></td>
+                        <td class="auto-style45" rowspan="3">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style56" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">Passengers 
-                            <br />
+                        <td class="auto-style56" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">Passengers <br />
                             <asp:TextBox ID="TextBox1" runat="server" Width="333px"></asp:TextBox>
                         </td>
                     </tr>
