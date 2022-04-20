@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,20 +15,11 @@ namespace Transportaion
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void SIGNUP_Click(object sender, EventArgs e)
         {
-
         }
 
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
