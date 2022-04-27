@@ -6,6 +6,9 @@
 <head runat="server">
     <title>Home</title>
     <style type="text/css">
+         body{
+            background-image:url('IMAGES/cloud.png');
+        }
         .auto-style1 {
             width: 100%;
             height: 600px;
@@ -105,7 +108,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style13" rowspan="3"></td>
-                        <td class="auto-style49" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;"><strong>
+                        <td class="auto-style49" colspan="3" style="background-color: #D5EAF9; "><strong>
                             <br />
                             </strong>
                             <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="Large" Text="Book Your Trip"></asp:Label>
@@ -115,7 +118,7 @@
                             &nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style54" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                        <td class="auto-style54" colspan="3" style="background-color: #D5EAF9; ">
                             <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" Width="660px">
                                 <asp:ListItem>One Way</asp:ListItem>
                                 <asp:ListItem>Round Trip</asp:ListItem>
@@ -123,7 +126,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style58" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                        <td class="auto-style58" colspan="2" style="background-color: #D5EAF9; ">
                             <asp:Label ID="Label4" runat="server" Text="From"></asp:Label>
                             <br />
                             <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
@@ -134,7 +137,7 @@
                             <br />
                             <br />
                         </td>
-                        <td class="auto-style59" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">To<br />
+                        <td class="auto-style59" style="background-color: #D5EAF9; ">To<br />
                             <asp:DropDownList ID="DropDownList3" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
                                 <asp:ListItem Selected="True">Alexandria</asp:ListItem>
                                 <asp:ListItem>Cairo</asp:ListItem>
@@ -144,7 +147,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style51" rowspan="3"></td>
-                        <td class="auto-style57" colspan="2" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                        <td class="auto-style57" colspan="2" style="background-color: #D5EAF9; ">
                             <asp:Label ID="Label3" runat="server" Text="Depature Date"></asp:Label>
                             <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="16px" NextPrevFormat="FullMonth" Width="130px">
                                 <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -155,7 +158,7 @@
                                 <TodayDayStyle BackColor="#CCCCCC" />
                             </asp:Calendar>
                         </td>
-                        <td class="auto-style48" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
+                        <td class="auto-style48" style="background-color: #D5EAF9; ">
                             <asp:Label ID="Label2" runat="server" Text="Return Date"></asp:Label>
                             <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="153px" NextPrevFormat="FullMonth" Width="130px">
                                 <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -169,13 +172,13 @@
                         <td class="auto-style45" rowspan="3">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style56" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">Passengers <br />
+                        <td class="auto-style56" colspan="3" style="background-color: #D5EAF9; ">Passengers <br />
                             <asp:TextBox ID="TextBox1" runat="server" Width="333px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style55" colspan="3" style="color: #000000; background-color: #3399FF; font-weight: bold; font-size: medium;">
-                            <asp:Button ID="Button1" runat="server" Text="Show Trips" Width="421px" PostBackUrl="~/TRIPS.aspx" />
+                        <td class="auto-style55" colspan="3" style="background-color: #D5EAF9; ">
+                            <asp:Button ID="Button1" runat="server" Text="Show Trips" Width="204px" BackColor="White" BorderColor="Black" Font-Bold="True" />
                         </td>
                     </tr>
                     <tr>

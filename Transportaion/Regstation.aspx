@@ -10,7 +10,7 @@
 
                 // 1- Create Connection Object
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Bus.mdf;Integrated Security=True";
+                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Customer.mdf;Integrated Security=True";
 
 
                 // 2- Create Insert statement 
@@ -48,16 +48,6 @@
 
     }
 </script>
-
-    <%--    
-
-        ////  int x = 0, y = 0, z;
-        ////   z = x / y; 
-
-
-     
-//}
-</script>--%>
 
 
 
@@ -311,6 +301,40 @@
             height: 46px;
         }
         
+        .auto-style116 {
+            width: 265px;
+            height: 38px;
+        }
+        
+        .auto-style117 {
+            width: 80px;
+            text-align: center;
+            height: 66px;
+        }
+        .auto-style118 {
+            width: 216px;
+            text-align: center;
+            height: 66px;
+        }
+        .auto-style119 {
+            width: 203px;
+            text-align: left;
+            height: 66px;
+        }
+        .auto-style120 {
+            width: 257px;
+            text-align: center;
+            height: 66px;
+        }
+        .auto-style121 {
+            width: 265px;
+            text-align: center;
+            height: 66px;
+        }
+        .auto-style122 {
+            font-size: small;
+        }
+        
     </style>
 </head>
 <body>
@@ -334,13 +358,13 @@
                 <td class="auto-style84" style="font-family: tahoma"><asp:TextBox ID="Uname" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
  
                     <br />
-                    <span class="auto-style96">Example : Ahmed or Abd Elrahman</span></td>
+                    <span class="auto-style96">Example : Ahmedd88</span></td>
                     
                 <td class="auto-style38">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Uname" ErrorMessage="This is Required File!" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style25">
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Shoul be 8 characters at least" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="\w{8,}" ControlToValidate="Uname"></asp:RegularExpressionValidator>
+                <td class="auto-style116">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Should be 8 characters at least     No Space" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="^[A-Za-z][A-Za-z0-9_]{7,20}$" ControlToValidate="Uname"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -358,15 +382,17 @@
                 <td class="auto-style39">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style31" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">&nbsp;</td>
-                <td class="auto-style106" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Phone Number           <td class="auto-style102">
-                    <asp:TextBox ID="PNum" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" ></asp:TextBox>
-                </td>
-                <td class="auto-style39">
+                <td class="auto-style117" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;"></td>
+                <td class="auto-style118" style="font-family: 'Arial Rounded MT Bold'; font-size: 25px; font-weight: 100; font-style: normal; font-variant: normal; text-transform: none; text-decoration: none;">Phone Number           <td class="auto-style119">
+                    <asp:TextBox ID="PNum" runat="server" style="margin-left: 0px" Width="188px" Height="21px" BorderWidth="1px" OnTextChanged="PNum_TextChanged" ></asp:TextBox>
+                    <br />
+                    <span class="auto-style122">Example : 0101 123 4567</span></td>
+                <td class="auto-style120">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PNum" ErrorMessage="This is Required File!" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style26">
-                    &nbsp;</td>
+                <td class="auto-style121">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="PNum" ErrorMessage="Invalid Phone Number" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="^(\+\d{0,1}\s)?\(?\d{4}\)?[\s]\d{3}[\s]\d{4}$"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style36">
@@ -392,7 +418,7 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Email" ErrorMessage="This is Required File!" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style45">
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Email" ErrorMessage="Invalid Email Address" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Email" ErrorMessage="Invalid Email " Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -419,7 +445,7 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Pass" ErrorMessage="This is Required File!" Font-Bold="True" Font-Names="Tahoma" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style115">
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Pass" ErrorMessage="Should be between 8 and 15 " Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="\w{8,15}"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Pass" ErrorMessage="Should be between 8 and 15 " Font-Names="Tahoma" Font-Size="Small" ForeColor="Red" ValidationExpression="([A-Za-z0-9#@$!*]){8,15}"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>

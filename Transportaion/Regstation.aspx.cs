@@ -25,5 +25,10 @@ namespace Transportaion
         {
 
         }
+
+        protected void PNum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
