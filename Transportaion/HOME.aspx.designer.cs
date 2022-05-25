@@ -114,13 +114,13 @@ namespace Transportaion
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Calendar1 control.
+        /// TextBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
 
         /// <summary>
         /// Label2 control.
@@ -132,13 +132,13 @@ namespace Transportaion
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Calendar2 control.
+        /// TextBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
         /// TextBox1 control.

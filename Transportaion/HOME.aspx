@@ -52,6 +52,7 @@
         .auto-style48 {
             text-align: left;
             width: 376px;
+            height: 42px;
         }
         .auto-style49 {
             height: 21px;
@@ -63,27 +64,25 @@
         .auto-style54 {
             height: 44px;
         }
-        .auto-style55 {
-            height: 90px;
-            text-align: left;
-        }
-        .auto-style56 {
-            text-align: left;
-            height: 60px;
-        }
         .auto-style57 {
             text-align: left;
-            width: 105px;
+            width: 287px;
+            height: 42px;
         }
         .auto-style58 {
             text-align: left;
-            width: 105px;
-            height: 113px;
-        }
+            width: 287px;
+            }
         .auto-style59 {
             text-align: left;
             width: 376px;
-            height: 113px;
+            }
+        .auto-style60 {
+            text-align: left;
+            height: 12px;
+        }
+        .auto-style61 {
+            text-align: left;
         }
         </style>
 </head>
@@ -149,36 +148,25 @@
                         <td class="auto-style51" rowspan="3"></td>
                         <td class="auto-style57" colspan="2" style="background-color: #D5EAF9; ">
                             <asp:Label ID="Label3" runat="server" Text="Depature Date"></asp:Label>
-                            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="16px" NextPrevFormat="FullMonth" Width="130px">
-                                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                                <OtherMonthDayStyle ForeColor="#999999" />
-                                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                                <TodayDayStyle BackColor="#CCCCCC" />
-                            </asp:Calendar>
+                            <br />
+                            <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox>
                         </td>
                         <td class="auto-style48" style="background-color: #D5EAF9; ">
                             <asp:Label ID="Label2" runat="server" Text="Return Date"></asp:Label>
-                            <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="153px" NextPrevFormat="FullMonth" Width="130px">
-                                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                                <OtherMonthDayStyle ForeColor="#999999" />
-                                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                                <TodayDayStyle BackColor="#CCCCCC" />
-                            </asp:Calendar>
+                            <br />
+                            <asp:TextBox ID="TextBox3" runat="server" TextMode="Date"></asp:TextBox>
                         </td>
                         <td class="auto-style45" rowspan="3">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style56" colspan="3" style="background-color: #D5EAF9; ">Passengers <br />
-                            <asp:TextBox ID="TextBox1" runat="server" Width="333px"></asp:TextBox>
+                        <td class="auto-style61" colspan="3" style="background-color: #D5EAF9; ">Passengers <br />
+                        <asp:TextBox ID="TextBox1" runat="server" Width="260px" TextMode="Number"></asp:TextBox>
+                          
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style55" colspan="3" style="background-color: #D5EAF9; ">
-                            <asp:Button ID="Button1" runat="server" Text="Show Trips" Width="204px" BackColor="White" BorderColor="Black" Font-Bold="True" />
+                        <td class="auto-style60" colspan="3" style="background-color: #D5EAF9; ">
+                            <asp:Button ID="Button1"  runat="server" Text="Show Trips" Width="204px" BackColor="White" BorderColor="Black" Font-Bold="True" />
                         </td>
                     </tr>
                     <tr>
